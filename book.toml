@@ -10,5 +10,5 @@ editable = true
 line-numbers = true
 
 [output.html]
-git-repository-url = "https://github.com/Milo123459/rust-notebooks/tree/master/guide"
-edit-url-template = "https://github.com/Milo123459/rust-notebooks/edit/master/guide/{path}"
+git-repository-url = "https://github.com/Milo123459/rust-notebooks/blob/master/guide"
+edit-url-template = "https://github.com/Milo123459/rust-notebooks/edit/master/{path}"
