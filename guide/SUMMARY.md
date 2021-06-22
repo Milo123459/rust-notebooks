@@ -6,5 +6,5 @@
 
 - [Getting Started](ch01/00-getting-started.md)
     - [Installation](ch01/01-installation.md)
-    - [Initiate a project](ch01/02-initiate.md)
-    - [The terms](ch01/03-terms.md)
+    - [The terms](ch01/02-terms.md)
+    - [Initiate a project](ch01/03-initiate.md)
