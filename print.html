@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="INTRODUCTION.html">Introduction</a></li><li class="chapter-item expanded "><a href="ch01/00-getting-started.html"><strong aria-hidden="true">1.</strong> Getting Started</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch01/01-installation.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="ch01/02-initiate.html"><strong aria-hidden="true">1.2.</strong> Initiate a project</a></li><li class="chapter-item expanded "><a href="ch01/03-terms.html"><strong aria-hidden="true">1.3.</strong> The terms</a></li></ol></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="INTRODUCTION.html">Introduction</a></li><li class="chapter-item expanded "><a href="ch01/00-getting-started.html"><strong aria-hidden="true">1.</strong> Getting Started</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch01/01-installation.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="ch01/02-terms.html"><strong aria-hidden="true">1.2.</strong> The terms</a></li><li class="chapter-item expanded "><a href="ch01/03-initiate.html"><strong aria-hidden="true">1.3.</strong> Initiate a project</a></li></ol></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -174,18 +174,32 @@
 <pre><code>rustup update
 </code></pre>
 <p>Seriously, I'm not joking, it is that easy!</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="initiate-a-project"><a class="header" href="#initiate-a-project">Initiate a project</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="terms"><a class="header" href="#terms">Terms</a></h1>
-<p>You are probably curious by what I mean with terms. </p>
-<p>It's simple, these are some of the things you should know as a Rustacean.</p>
-<h2 id="the-terms"><a class="header" href="#the-terms">The terms</a></h2>
-<p><strong>rustacean</strong> - Someone who programs using Rust.</p>
-<p><strong>ferris</strong> - Cute mascot for the Rust language. Some helpful information:</p>
-<ul>
-<li>Cute: <code>true</code></li>
-<li>Memory: <code>safe</code></li>
-<li>Pronouns: <code>any</code></li>
-</ul>
+<p>Words that people use as Rustaceans, along with helpful declarations about what things are.</p>
+<p><strong>rustacean</strong> - Someone whos programs in Rust.</p>
+<p><strong>ferris</strong> - Mascot for the Rust programming language.</p>
+<p><strong>Cargo.toml</strong> - Essentially a package.json for Rust projects, containing dependencies, metadata, etc.</p>
+<p><strong>Cargo.lock</strong> - Basically a <code>yarn.lock</code> for Rust projects. Contains information for internal dependencies.</p>
+<p><strong><a href="https://crates.io">crates.io</a></strong> - A place where dependencies live. Every (public) dependency gets published on crates.</p>
+<p><strong>target</strong> - A directory containing built crates and the built source code of your project.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="initiate-a-project"><a class="header" href="#initiate-a-project">Initiate a project</a></h1>
+<p>The first step is initiating a project, and it's very easy!</p>
+<p>Firstly, lets say you have already mae a directory for your project, for example: Ours for this is <code>rust-notebooks</code>, you CD into the directory, and run <code>cargo init</code>. This initiates a blank project.</p>
+<p>Lets say you want Cargo to make the directory for you. Simply type <code>cargo new &lt;poject-name&gt;</code>, so for us, this'd be <code>cargo new rust-notebooks</code>.</p>
+<p>Let's analyze what a freshly brewed project looks like.</p>
+<pre><code>Cargo.lock
+Cargo.toml
+.gitignore
+target/
+src/
+    main.rs
+</code></pre>
+<p>If for some reason, <code>.gitignore</code> isn't created, just add <code>target</code> to the gitignore file. You don't want to commit the target directory, trust me!</p>
+<p>Now, lets talk about <code>src/main.rs</code> - the first few lines of our Rust project!</p>
+<pre><code class="language-rs">fn main() {
+    println!(&quot;Hello, world.&quot;);
+}
+</code></pre>
 
                     </main>
 
