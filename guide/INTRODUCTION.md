@@ -3,6 +3,7 @@
 ## Rust notebooks
 
 👋, Hey traveller! I see you have stopped off over here to learn Rust. Lets talk about some advantages to why you should:
+
 - Performant
 - Memory safety
 - Type system

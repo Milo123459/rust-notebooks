@@ -1,4 +1,4 @@
-## Getting Started
+# Getting Started
 
 This chapter goes over things like:
 

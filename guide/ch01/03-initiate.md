@@ -8,7 +8,7 @@ Lets say you want Cargo to make the directory for you. Simply type `cargo new <p
 
 Let's analyze what a freshly brewed project looks like.
 
-```
+```text
 Cargo.lock
 Cargo.toml
 .gitignore
