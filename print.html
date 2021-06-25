@@ -156,7 +156,7 @@
 <li>Type system</li>
 </ul>
 <p>Before you read on, this isn't a copy of the Rust Book. I wrote this as a more laid-back approach to learn Rust, and thinks that helped me out on my journey of becoming a Rustacean.</p>
-<div style="break-before: page; page-break-before: always;"></div><h2 id="getting-started"><a class="header" href="#getting-started">Getting Started</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="getting-started"><a class="header" href="#getting-started">Getting Started</a></h1>
 <p>This chapter goes over things like:</p>
 <ul>
 <li>How to initiate projects</li>
@@ -167,11 +167,11 @@
 <p>This is the first step in becoming a Rustacean. Installing is easy, fast, and efficient!</p>
 <p>Firstly, lets go to <a href="https://rustup.rs">rustup.rs</a> - download and run the installer.</p>
 <p>Then, go to the terminal and type</p>
-<pre><code>rustup toolchain add stable
+<pre><code class="language-console">rustup toolchain add stable
 </code></pre>
 <p>Congrats, rust is installed. See how easy that was?</p>
-<p>If you need to update, type </p>
-<pre><code>rustup update
+<p>If you need to update, type:</p>
+<pre><code class="language-console">rustup update
 </code></pre>
 <p>Seriously, I'm not joking, it is that easy!</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="terms"><a class="header" href="#terms">Terms</a></h1>
@@ -187,7 +187,7 @@
 <p>Firstly, lets say you have already mae a directory for your project, for example: Ours for this is <code>rust-notebooks</code>, you CD into the directory, and run <code>cargo init</code>. This initiates a blank project.</p>
 <p>Lets say you want Cargo to make the directory for you. Simply type <code>cargo new &lt;poject-name&gt;</code>, so for us, this'd be <code>cargo new rust-notebooks</code>.</p>
 <p>Let's analyze what a freshly brewed project looks like.</p>
-<pre><code>Cargo.lock
+<pre><code class="language-text">Cargo.lock
 Cargo.toml
 .gitignore
 target/
